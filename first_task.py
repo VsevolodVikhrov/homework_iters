@@ -37,13 +37,17 @@ class GetLiteralNum:
 
 
 def get_user_input():
-    list_of_user_input = []
-    user_input = input("Enter numbers string: ")
-    user_input = user_input.split()
-    for i in user_input:
-        if i.isdigit():
-            list_of_user_input.append(i)
-    get_next_element(list_of_user_input)
+    try:
+        while True:
+            list_of_user_input = []
+            user_input = input("Enter numbers string: ")
+            user_input = user_input.split()
+            for i in user_input:
+                if i.isdigit():
+                    list_of_user_input.append(i)
+            get_next_element(list_of_user_input)
+    except KeyboardInterrupt:
+        pass
 
 
 def get_next_element(list_of_user_input):
@@ -54,3 +58,4 @@ def get_next_element(list_of_user_input):
 
 if __name__ == '__main__':
     get_user_input()
+
