@@ -1,6 +1,10 @@
-import itertools
+def fibonacci_gen():
+    prev_el = 0
+    next_el = 1
+    while True:
+        yield prev_el
+        prev_el, next_el = next_el, (next_el + prev_el)
 
-a = "dan"
-a = itertools.permutations(a, r=3)
-a = list(a)
-print(a)
+
+for i in fibonacci_gen():
+    print(i)

@@ -27,6 +27,7 @@ class Permutations:
 
 user_string = input("Input here your string: ")
 a = Permutations(user_string)
-for i in a:
-    print(i)
+for j in a:
+    print(j)
+
 
