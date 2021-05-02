@@ -102,6 +102,4 @@ def get_decoded_pass(password):
     return password
 
 
-if __name__ == "__main__":
-    parse_user_input()
 
